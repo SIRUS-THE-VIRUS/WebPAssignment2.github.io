@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="styles.css">
+		<style>
+			body {
+				
+				font-family: Georgia;
+				background-color: #2BB7FF;
+				height: 400px; /* You must set a specified height */
+				background-position: center; /* Center the image */
+				background-repeat: no-repeat; /* Do not repeat the image */
+				background-size: cover; /* Resize the background image to cover the entire container */
+			}
+
+			input[type=text], input[type=password] {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				box-sizing: border-box;
+			}
+			button:hover {
+				opacity: 0.8;
+			}
+
+			.container {
+				padding: 32px;
+			}
+		</style>
+	</head>
+	<body>
+		<form class="enclose" method="POST" action="javascript:var uname = document.getElementById('uname').value;
+				var passwd = document.getElementById('passwd').value;
+				if(uname == 'teacher')
+					if(passwd == 'teacher')location.replace('reportcard.html');">
+		<center><h2>CP Ellingham High School Login Page</h2></center>
+		  <div class="container">
+			<label><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" id="uname" required>
+
+			<label><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" id="passwd" required>
+				
+			<button type="submit">Login</button>
+		  </div>
+		</form>
+
+	</body>
+</html>
