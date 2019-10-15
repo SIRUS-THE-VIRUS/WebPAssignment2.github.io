@@ -18,9 +18,14 @@ function calcgrade(){
 						lettergrade[i].value = "C";
 					if( average >=0 && average <=49)
 						lettergrade[i].value = "D";
-					if(average>100 || average<0)
+					if((test1[i].value>100 || test1[i].value<0)||(test2[i].value>100 || test2[i].value<0)||(finals[i].value>100 || finals[i].value<0)){
 						alert("Grade must be between 0 and 100 percent");
+						test1[i].value = 0;
+						test2[i].value = 0;
+						finals[i].value = 0;
+						lettergrade[i].value = "D";
 					//lettergrade[i].value = average;
+					}
 				}
 
 			}

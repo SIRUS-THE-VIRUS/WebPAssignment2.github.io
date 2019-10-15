@@ -27,12 +27,15 @@
 		  background-color: #dddddd;
 		}
 		a{color:inherit;}
+
 		</style>
 		<script src="myscripts.js"></script>
 	</head>
-	<body class="enclose">
-		<center><h2>CP Ellingham High School Report Card</h2></center>
-		<form id="form">
+	<body>
+		<form id="form" class="enclose">
+		<header>
+		<center><h2>REPORT CARD<br> CP Ellingham High School Report Card</h2></center>
+		</header>
 		<ul style="width:10%; float:left;">
 			<b>Date</b><input id="date" type="text"/>
 			<b>Parent Name</b><input id="Pname" type="text"/>
@@ -140,10 +143,10 @@
 			<td>D=0%-49%</td>
 		  </tr>
 		</table>
-		</form>
 		<button type="submit" onclick="cancel()">Cancel</button>
 		<button type="Save" onclick="save()">Save</button>
 		<button type="Email"><a id="emailit">Email</a></button>
 		<button type="Exit" onclick="exit()">Exit</button>
+		</form>
 	</body>
 </html>
