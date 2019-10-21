@@ -14,7 +14,7 @@
 		  font-family: arial, sans-serif;
 		  border-collapse: collapse;
 		  width: 100%;
-		  margin:20px;
+		  margin:auto;
 		}
 
 		td, th {
@@ -69,56 +69,56 @@
 			<th>LetterGrade</th>
 		  </tr>
 		  <tr>
-			<td>Math</td>
+			<td><input name="subject" type="text"/></td>
 			<td><input name="test1" type="text" onchange="calcgrade()"/></td>
 			<td><input name="test2" type="text" onchange="calcgrade()"/></td>
 			<td><input name="finals" type="text" onchange="calcgrade()"/></td>
 			<td><input name="lettergrade" type="text" disabled /></td>
 		  </tr>
 		  <tr>
-		  <td>English</td>
+		  <td><input name="subject" type="text"/></td>
 			<td><input name="test1" type="text" onchange="calcgrade()"/></td>
 			<td><input name="test2" type="text" onchange="calcgrade()"/></td>
 			<td><input name="finals" type="text" onchange="calcgrade()"/></td>
 			<td><input name="lettergrade" type="text" disabled /></td>
 		  </tr>
 		  <tr>
-		  <td>Science</td>
+		  <td><input name="subject" type="text"/></td>
 			<td><input name="test1" type="text" onchange="calcgrade()"/></td>
 			<td><input name="test2" type="text" onchange="calcgrade()"/></td>
 			<td><input name="finals" type="text" onchange="calcgrade()"/></td>
 			<td><input name="lettergrade" type="text" disabled /></td>
 		  </tr>
 		  <tr>
-		  <td>History</td>
+		  <td><input name="subject" type="text"/></td>
 			<td><input name="test1" type="text" onchange="calcgrade()"/></td>
 			<td><input name="test2" type="text" onchange="calcgrade()"/></td>
 			<td><input name="finals" type="text" onchange="calcgrade()"/></td>
 			<td><input name="lettergrade" type="text" disabled /></td>
 		  </tr>
 		  <tr>
-		  <td>Economics</td>
+		  <td><input name="subject" type="text"/></td>
 			<td><input name="test1" type="text" onchange="calcgrade()"/></td>
 			<td><input name="test2" type="text" onchange="calcgrade()"/></td>
 			<td><input name="finals" type="text" onchange="calcgrade()"/></td>
 			<td><input name="lettergrade" type="text" disabled /></td>
 		  </tr>
 		  <tr>
-		  <td>Literature</td>
+		  <td><input name="subject" type="text"/></td>
 			<td><input name="test1" type="text" onchange="calcgrade()"/></td>
 			<td><input name="test2" type="text" onchange="calcgrade()"/></td>
 			<td><input name="finals" type="text" onchange="calcgrade()"/></td>
 			<td><input name="lettergrade" type="text" disabled /></td>
 		  </tr>
 		  <tr>
-		  <td>Music</td>
+		  <td><input name="subject" type="text"/></td>
 			<td><input name="test1" type="text" onchange="calcgrade()"/></td>
 			<td><input name="test2" type="text" onchange="calcgrade()"/></td>
 			<td><input name="finals" type="text" onchange="calcgrade()"/></td>
 			<td><input name="lettergrade" type="text" disabled /></td>
 		  </tr>
 		  <tr>
-		  <td>PE</td>
+		  <td><input name="subject" type="text"/></td>
 			<td><input name="test1" type="text" onchange="calcgrade()"/></td>
 			<td><input name="test2" type="text" onchange="calcgrade()"/></td>
 			<td><input name="finals" type="text" onchange="calcgrade()"/></td>
@@ -145,7 +145,7 @@
 		</table>
 		<button type="submit" onclick="cancel()">Cancel</button>
 		<button type="Save" onclick="save()">Save</button>
-		<button type="Email"><a id="emailit">Email</a></button>
+		<button type="Email" onclick="email()"><a id="emailit">Email</a></button>
 		<button type="Exit" onclick="exit()">Exit</button>
 		</form>
 	</body>
